@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover original novels and ebooks at Velvet Pages, an independent digital bookstore.">
+  <title>Velvet Pages — Every Story Opens a New World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    INDEPENDENT STORIES, MADE WITH CARE
+  </div>
+
+  <header class="navbar">
+    <a href="#" class="logo">velvet <span>pages.</span></a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#books">Books</a>
+      <a href="#about">Our story</a>
+      <a href="#newsletter">Letters</a>
+    </nav>
+
+    <button id="cart-toggle" class="cart-button">
+      My bag <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">A HOME FOR YOUR NEXT FAVOURITE STORY</span>
+        <h1>Some stories<br>stay <em>with you.</em></h1>
+        <p>
+          A little corner of the world for stories that move you,
+          worlds you can disappear into, and ideas worth keeping.
+        </p>
+        <a class="button-primary" href="#books">Explore the library ↗</a>
+        <div class="hero-note">Original ebooks · Instant digital reading after purchase</div>
+      </div>
+
+      <div class="hero-visual" aria-label="Decorative literary book covers">
+        <div class="book-cover cover-back">
+          <span class="cover-label">A VELVET PAGES STORY</span>
+          <h2>The Library of<br>Forgotten Names</h2>
+          <span class="cover-bottom">A TALE OF MEMORY & MAGIC</span>
+        </div>
+        <div class="book-cover cover-front">
+          <span class="cover-label">AN ORIGINAL NOVEL</span>
+          <div class="cover-flower">✳</div>
+          <h2>The Last Letter<br>at <em>Midnight</em></h2>
+          <span class="cover-bottom">A STORY OF LOVE & SECRETS</span>
+        </div>
+        <span class="floating-star star-one">✦</span>
+        <span class="floating-star star-two">✧</span>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✧</span> Original stories</div>
+      <div><span>♡</span> Thoughtfully curated</div>
+      <div><span>↓</span> Digital PDF editions</div>
+    </section>
+
+    <section class="library section" id="books">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE VELVET COLLECTION</span>
+          <h2>Find your next <em>world.</em></h2>
+          <p>Fiction, imagination, and ideas for curious minds.</p>
+        </div>
+        <span class="book-count">OUR FIRST COLLECTION · 03 TITLES</span>
+      </div>
+
+      <div class="catalogue-tools">
+        <label class="search">
+          <span>⌕</span>
+          <input type="search" id="book-search"
+            placeholder="Search titles, genres, stories..."
+            aria-label="Search books">
+        </label>
+
+        <div class="genre-filters" aria-label="Filter by genre">
+          <button class="genre-filter active" data-genre="all">All books</button>
+          <button class="genre-filter" data-genre="romance">Romance</button>
+          <button class="genre-filter" data-genre="fantasy">Fantasy</button>
+          <button class="genre-filter" data-genre="nonfiction">Nonfiction</button>
+        </div>
+      </div>
+
+      <div class="book-grid" id="book-grid">
+        <article class="book-card" data-id="1" data-genre="romance">
+          <button class="book-art art-romance preview-button" data-id="1"
+            aria-label="Preview The Last Letter at Midnight">
+            <span class="art-top">VELVET PAGES · ORIGINAL FICTION</span>
+            <span class="art-decoration">❧</span>
+            <span class="art-title">The Last Letter<br>at Midnight</span>
+            <span class="art-subtitle">A STORY OF LOVE & SECRETS</span>
+            <span class="art-author">BY YOUR AUTHOR NAME</span>
+          </button>
+          <div class="book-info">
+            <div>
+              <span class="genre-label">ROMANCE · DRAMA</span>
+              <h3>The Last Letter at Midnight</h3>
+              <p>Two strangers. A forgotten secret. Letters that change everything.</p>
+            </div>
+            <strong>$4.99</strong>
+          </div>
+          <div class="book-actions">
+            <button class="button-outline preview-button" data-id="1">Read preview</button>
+            <button class="button-primary add-button" data-id="1">Add to bag +</button>
+          </div>
+        </article>
+
+        <article class="book-card" data-id="2" data-genre="fantasy">
+          <button class="book-art art-fantasy preview-button" data-id="2"
+            aria-label="Preview The Library of Forgotten Names">
+            <span class="art-top">VELVET PAGES · ORIGINAL FICTION</span>
+            <span class="art-decoration">✧</span>
+            <span class="art-title">The Library of<br>Forgotten Names</span>
+            <span class="art-subtitle">A TALE OF MEMORY & MAGIC</span>
+            <span class="art-author">BY YOUR AUTHOR NAME</span>
+          </button>
+          <div class="book-info">
+            <div>
+              <span class="genre-label">FANTASY · MYSTERY</span>
+              <h3>The Library of Forgotten Names</h3>
+              <p>A hidden library holds memories no one remembers owning.</p>
+            </div>
+            <strong>$5.99</strong>
+          </div>
+          <div class="book-actions">
+            <button class="button-outline preview-button" data-id="2">Read preview</button>
+            <button class="button-primary add-button" data-id="2">Add to bag +</button>
+          </div>
+        </article>
+
+        <article class="book-card" data-id="3" data-genre="nonfiction">
+          <button class="book-art art-growth preview-button" data-id="3"
+            aria-label="Preview Small Steps Forward">
+            <span class="art-top">VELVET PAGES · A PRACTICAL GUIDE</span>
+            <span class="art-decoration">✿</span>
+            <span class="art-title">Small Steps<br><em>Forward</em></span>
+            <span class="art-subtitle">A GENTLER APPROACH TO GROWTH</span>
+            <span class="art-author">BY YOUR AUTHOR NAME</span>
+          </button>
+          <div class="book-info">
+            <div>
+              <span class="genre-label">NONFICTION · PERSONAL GROWTH</span>
+              <h3>Small Steps Forward</h3>
+              <p>A reflective guide to routines, goals, and everyday progress.</p>
+            </div>
+            <strong>$3.99</strong>
+          </div>
+          <div class="book-actions">
+            <button class="button-outline preview-button" data-id="3">Read preview</button>
+            <button class="button-primary add-button" data-id="3">Add to bag +</button>
+          </div>
+        </article>
+      </div>
+
+      <p id="no-books" hidden class="empty-state">No titles found. Try another search.</p>
+    </section>
+
+    <section class="editorial" id="about">
+      <div class="editorial-symbol">V.</div>
+      <span class="eyebrow">A SMALL INDEPENDENT BOOKSHOP</span>
+      <h2>For the stories we tell<br>and the <em>worlds we imagine.</em></h2>
+      <p>
+        Velvet Pages is a home for original digital books,
+        thoughtful ideas, and stories created to be read,
+        revisited, and remembered.
+      </p>
+    </section>
+
+    <section class="newsletter section" id="newsletter">
+      <span class="eyebrow">LETTERS FROM OUR LITTLE LIBRARY</span>
+      <h2>New stories, <em>occasionally.</em></h2>
+      <p>Be the first to hear about new titles and upcoming releases.</p>
+      <form id="newsletter-form">
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <input type="email" id="newsletter-email"
+          placeholder="Your email address" required>
+        <button type="submit">Join the list ↗</button>
+      </form>
+      <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo">velvet <span>pages.</span></a>
+    <p>Every story opens a new world.</p>
+    <div class="footer-links">
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="mailto:hello@example.com">Contact</a>
+      <a href="#policies">Policies</a>
+    </div>
+    <div class="policy-note" id="policies">
+      Please add your real contact, privacy, digital-delivery,
+      and refund policies before launching sales.
+    </div>
+    <small>© <span id="year"></span> Velvet Pages. All rights reserved.</small>
+  </footer>
+
+  <!-- Book preview dialog -->
+  <div class="modal-backdrop" id="preview-modal" aria-hidden="true">
+    <section class="preview-modal" role="dialog"
+      aria-modal="true" aria-labelledby="preview-title">
+      <button class="modal-close" id="preview-close" aria-label="Close preview">×</button>
+      <span class="eyebrow" id="preview-genre">BOOK PREVIEW</span>
+      <h2 id="preview-title">Book title</h2>
+      <p id="preview-description"></p>
+      <div class="excerpt">
+        <h3>A little taste of the story</h3>
+        <p id="preview-excerpt"></p>
+      </div>
+      <div class="preview-footer">
+        <strong id="preview-price"></strong>
+        <button class="button-primary" id="preview-add">Add to bag +</button>
+      </div>
+      <p class="demo-note">Sample preview only. Replace it with an excerpt from your finished book.</p>
+    </section>
+  </div>
+
+  <!-- Shopping cart -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-panel" class="cart-panel"
+    aria-label="Shopping bag" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow">YOUR COLLECTION</span>
+        <h2>Your reading bag <em>♡</em></h2>
+      </div>
+      <button id="cart-close" class="modal-close" aria-label="Close bag">×</button>
+    </div>
+
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <strong id="cart-subtotal">$0.00</strong>
+      </div>
+      <p>Digital PDF editions. Applicable taxes are not calculated in this demo.</p>
+      <button id="checkout-button" class="button-primary checkout-button">
+        Continue to checkout ↗
+      </button>
+      <p class="demo-note">DEMO ONLY · NO PAYMENT WILL BE TAKEN</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
